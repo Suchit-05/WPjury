@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Shop Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f2ec;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4b2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .coffee-img {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 60%;
+    }
+
+    table, th, td {
+      border: 1px solid #888;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+    select, input[type="submit"] {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☕ Welcome to BrewBean Coffee</h1>
+    <p>Your favorite online coffee shop</p>
+  </header>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/1039/1039328.png" alt="Coffee Cup" class="coffee-img">
+
+  <div class="content">
+    <h2>Coffee Rates</h2>
+    <table>
+      <tr>
+        <th>Coffee Type</th>
+        <th>Size</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Espresso</td>
+        <td>Small</td>
+        <td>₹80</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>Medium</td>
+        <td>₹120</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>Large</td>
+        <td>₹150</td>
+      </tr>
+      <tr>
+        <td>Mocha</td>
+        <td>Regular</td>
+        <td>₹130</td>
+      </tr>
+    </table>
+
+    <h2>Choose Your Coffee</h2>
+    <form>
+      <label for="coffeeType">Select coffee type:</label><br>
+      <select id="coffeeType" name="coffeeType">
+        <option value="Espresso">Espresso</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Mocha">Mocha</option>
+      </select><br><br>
+
+      <input type="submit" value="Order Now">
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 BrewBean Coffee. All rights reserved.
+  </footer>
+
+</body>
+</html>
