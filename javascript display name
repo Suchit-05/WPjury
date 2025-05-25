@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome Message</title>
+</head>
+<body>
+
+  <h2>Greeting Message</h2>
+  <button onclick="showWelcomeMessage()">Enter Your Name</button>
+
+  <p id="output"></p>
+
+  <script>
+    function showWelcomeMessage() {
+
+      const name = prompt("Please enter your name:");
+
+      {
+
+        const message = `Hello ${name} Welcome To World of JavaScript`;
+        document.getElementById("output").textContent = message;
+      }
+    }
+  </script>
+
+</body>
+</html>
