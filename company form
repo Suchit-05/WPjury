@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttons input {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      background: #28a745;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .buttons input[type="reset"] {
+      background: #dc3545;
+    }
+
+    .buttons input:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Company Registration</h2>
+    <form>
+      <label>Company Name:</label>
+      <input type="text" name="company" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" required>
+
+      <label>Industry Type:</label>
+      <select name="industry" required>
+        <option value="">Select</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Manufacturing">Manufacturing</option>
+      </select>
+
+      <label>About Company:</label>
+      <textarea name="about" rows="3"></textarea>
+
+      <div class="buttons">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
